@@ -14,12 +14,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Surfer",
-  description: "hey there! I’m making an vscode extension that will allow users to talk to groq ai through the chat pane and assign the ai model tasks to do by entering it in the task pannel",
+  description: "hey there! I'm making an vscode extension that will allow users to talk to groq ai through the chat pane and assign the ai model tasks to do by entering it in the task pannel",
 };
 
 const SpaceMono = Space_Mono({
   variable: '--font-space',
-  weight: "400"
+  weight: ["400", "700"],
+  subsets: ["latin"]
 })
 
 export default function RootLayout({

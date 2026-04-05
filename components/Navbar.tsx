@@ -8,9 +8,10 @@ const Navbar = () => {
         <nav className='flex flex-row gap-3.5'>
             <Link href={'/product'}>Product</Link>
             <Link href={'/pricing'}>Pricing</Link>
+            {/* Added GitHub button */}
+            <Link href={'https://github.com/Abinnovator/surfer-extension'} target='_blank' rel='noopener noreferrer'>GitHub</Link>
         </nav>
         <Link href={'https://open-vsx.org/extension/Abinnovator/pointer'}>Try now</Link>
-
     </div>
   )
 }

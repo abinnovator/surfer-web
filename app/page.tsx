@@ -13,7 +13,7 @@ export default function Home() {
             {/* Animated heading */}
             <AnimatedText
               text="THE EXTENSION FOR SOLO DEVS AND INDIE TEAMS"
-              className="font-bold text-5xl max-w-5xl"
+              className="font-bold text-5xl max-w-[965px]"
             />
             {/* Animated sub‑heading */}
             <AnimatedText

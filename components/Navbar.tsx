@@ -9,7 +9,7 @@ const Navbar = () => {
             <Link href={'/product'}>Product</Link>
             <Link href={'/pricing'}>Pricing</Link>
         </nav>
-        <Link href={'/pricing'}>Try now</Link>
+        <Link href={'https://open-vsx.org/extension/Abinnovator/pointer'}>Try now</Link>
 
     </div>
   )

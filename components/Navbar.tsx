@@ -11,7 +11,7 @@ const Navbar = () => {
             {/* Added GitHub button */}
             <Link href={'https://github.com/Abinnovator/surfer-extension'} target='_blank' rel='noopener noreferrer'>GitHub</Link>
         </nav>
-        <Link href={'https://open-vsx.org/extension/Abinnovator/surfer'}>Try now</Link>
+        <Link href={'/surfer-0.0.4.vsix'} download={true}>Try now</Link>
     </div>
   )
 }

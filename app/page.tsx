@@ -13,7 +13,7 @@ export default function Home() {
         <Image src={'/HeroImage.png'} alt="Hero Image" width={1252} height={690} />
       </div>
       <div className="m-24 bg-[#211B14] rounded-2xl items-center justify-center flex">
-        <h1 className="text-5xl py-52 px-52 text-center max-w-4xl">Agents Handle the small stuff so you can handle the things that are actually important</h1>
+        <h1 className="text-5xl py-52 px-52 text-center max-w-6xl">Agents Handle the small stuff so you can handle the things that are actually important</h1>
       </div>
     </div>
   );

@@ -75,8 +75,8 @@ export default function ScrollExpandHero() {
         ref={imageWrapperRef}
         className="relative overflow-hidden"
         style={{
-          width: '1252px',
-          maxWidth: '90vw',
+          width: '1300px',
+          maxWidth: '100vw',
           aspectRatio: '1252/690',
           borderRadius: '16px',
         }}
@@ -85,7 +85,7 @@ export default function ScrollExpandHero() {
           src="/HeroImage.png"
           alt="Hero Image"
           fill
-          className="object-contain"
+          className="object-contain border-2 border-white"
           priority
         />
       </div>

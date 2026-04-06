@@ -47,7 +47,7 @@ export default function Product() {
               </p>
               <ul className="list-disc list-inside space-y-2">
                 <li>Generate boilerplate code</li>
-                <li>Ask it to change pages.scrips and more</li>
+                <li>Ask it to change scripts</li>
                 <li>And much more</li>
               </ul>
             </div>

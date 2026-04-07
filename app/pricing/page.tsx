@@ -5,7 +5,7 @@ import { AnimatedText } from "@/components/AnimatedText";
 
 export default function Pricing() {
   return (
-    <div className="bg-[#15120B] min-h-screen text-white font-space">
+    <div className="min-h-screen text-white font-space">
       <Navbar />
       {/* Animated heading */}
       <AnimatedSection delay={0.1} direction="up" className="pt-10 flex justify-center items-center">
@@ -18,7 +18,7 @@ export default function Pricing() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl w-full px-4">
             {/* Hobby Plan */}
             <AnimatedSection delay={0.1} direction="up">
-              <div className="bg-[#211B14] rounded-2xl p-8 flex flex-col items-center">
+              <div className="bg-[#1c1c1c] rounded-2xl p-8 flex flex-col items-center">
                 <AnimatedSection delay={0.05} direction="up">
                   <h2 className="text-2xl font-semibold mb-4">Hobby</h2>
                 </AnimatedSection>
@@ -40,7 +40,7 @@ export default function Pricing() {
             </AnimatedSection>
             {/* Pro Plan */}
             <AnimatedSection delay={0.2} direction="up">
-              <div className="bg-[#211B14] rounded-2xl p-8 flex flex-col items-center border-2 border-white">
+              <div className="bg-[#1c1c1c] rounded-2xl p-8 flex flex-col items-center border-2 border-white">
                 <AnimatedSection delay={0.05} direction="up">
                   <h2 className="text-2xl font-semibold mb-4">Pro</h2>
                 </AnimatedSection>
@@ -63,7 +63,7 @@ export default function Pricing() {
             </AnimatedSection>
             {/* Max Plan */}
             <AnimatedSection delay={0.3} direction="up">
-              <div className="bg-[#211B14] rounded-2xl p-8 flex flex-col items-center">
+              <div className="bg-[#1c1c1c] rounded-2xl p-8 flex flex-col items-center">
                 <AnimatedSection delay={0.05} direction="up">
                   <h2 className="text-2xl font-semibold mb-4">Max</h2>
                 </AnimatedSection>

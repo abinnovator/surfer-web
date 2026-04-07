@@ -5,7 +5,7 @@ import { AnimatedText } from "@/components/AnimatedText";
 
 export default function Product() {
   return (
-    <div className="bg-[#15120B] min-h-screen font-space text-white">
+    <div className=" min-h-screen font-space text-white">
       <Navbar />
       <AnimatedSection delay={0.2} direction="up">
         <div className="flex flex-col items-center py-24 px-8 gap-12">
@@ -25,7 +25,7 @@ export default function Product() {
         <div className="flex flex-col md:flex-row justify-center gap-8 px-8 mb-16">
           {/* Chat Sidebar Card */}
           <AnimatedSection delay={0.5} direction="up">
-            <div className="bg-[#211B14] rounded-2xl p-8 flex-1 max-w-md">
+            <div className="bg-[#1c1c1c] rounded-2xl shadow-2xl p-8 flex-1 max-w-md">
               <h2 className="text-3xl font-semibold mb-4">AI Chat Sidebar</h2>
               <p className="mb-4">
                 A persistent chat pane inside VS Code where you can talk to Groq AI (or any compatible model). Ask questions, get code suggestions, or brainstorm ideas without leaving your editor.
@@ -40,7 +40,7 @@ export default function Product() {
 
           {/* Task Panel Card */}
           <AnimatedSection delay={0.6} direction="up">
-            <div className="bg-[#211B14] rounded-2xl p-8 flex-1 max-w-md">
+            <div className="bg-[#1c1c1c] rounded-2xl shadow-2xl p-8 flex-1 max-w-md">
               <h2 className="text-3xl font-semibold mb-4">AI Task Panel</h2>
               <p className="mb-4">
                 Create tasks for the AI to handle. The panel tracks progress, lets you review results, and integrates directly with your workspace.

@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         <div className="justify-center flex items-center">
-          <Image src={'/HeroImage.png'} alt="Hero Image" width={1252} height={690} />
+          <Image src={'https://cdn.hackclub.com/019dd2c7-6c22-7a2a-bed9-f5077d78f7e4/HeroImage.webp'} alt="Hero Image" width={1252} height={690} />
         </div>
         <section>
           <div className="bg-[#1A1A1A]">

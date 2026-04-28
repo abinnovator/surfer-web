@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import { AnimatedText } from "@/components/AnimatedText";
 import Image from "next/image";
+import { Bot, Code, SquareChartGantt, Star } from "lucide-react";
 
 export default function Home() {
   return (
@@ -31,13 +32,41 @@ export default function Home() {
         <div className="justify-center flex items-center">
           <Image src={'/HeroImage.png'} alt="Hero Image" width={1252} height={690} />
         </div>
-
-        <div className="m-24 bg-[#211B14] rounded-2xl items-center justify-center flex">
-          <AnimatedText 
-            text="Agents Handle the small stuff so you can handle the things that are actually important." 
-            className="text-5xl p-40 text-center max-w-7xl" 
-          />
-        </div>
+        <section>
+          <div className="bg-[#1A1A1A]">
+            <div className="py-24 mt-10">
+              <div className="px-24 py-10 border-b-2 border-[#3C3C3C] pb-30">
+                <h1 className="text-5xl font-inter max-w-[1200px]">Agents Handle the small stuff so you can handle the things that are actually important.</h1>
+                <p className="pt-2">You assign tasks to your agents and they handle the rest</p>
+              </div>
+            </div>
+            <div className="flex flex-col py-10 px-24">
+              <div className="flex justify-center items-center flex-col">
+                <Bot width={150} height={150} />
+                <h1 className="text-3xl font-inter">Orchestrator Agent</h1>
+                <p className="max-w-[331px] text-center">Manages all the 3 sub agents and decides which agents to use.</p>
+              </div>
+              <div className="flex flex-row justify-between px-5 py-32">
+                <div className="flex flex-col justify-center items-center bg-[#49494f] p-10 rounded-2xl">
+                  <SquareChartGantt width={80} height={80} />
+                  <h1 className="text-3xl font-inter">Planning Agent</h1>
+                  <p className="max-w-[331px] text-center">Plans out the task given to surfer by the user.</p>
+                </div>
+                <div className="flex flex-col justify-center items-center bg-[#49494f] p-10 rounded-2xl">
+                  <Code width={80} height={80} />
+                  <h1 className="text-3xl font-inter">Coding Agent</h1>
+                  <p className="max-w-[331px] text-center">Plans out the task given to surfer by the user.</p>
+                </div>
+                <div className="flex flex-col justify-center items-center bg-[#49494f] p-10 rounded-2xl">
+                  <Star width={80} height={80} />
+                  <h1 className="text-3xl font-inter">Review Agent</h1>
+                  <p className="max-w-[331px] text-center">Reviews the code written by the code agent</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
       </div>
     </div>
   );

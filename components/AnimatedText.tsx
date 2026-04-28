@@ -23,7 +23,7 @@ export const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) =
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.4,
+            duration: 0.1,
             delay: index * 0.05,
           }}
           style={{ display: "inline-block" }}

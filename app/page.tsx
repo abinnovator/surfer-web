@@ -2,13 +2,15 @@ import Navbar from "@/components/Navbar";
 import { AnimatedText } from "@/components/AnimatedText";
 import Image from "next/image";
 import { Bot, Code, SquareChartGantt, Star } from "lucide-react";
+import Button from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-space text-white relative">
+    <div className="min-h-screen font-space text-white relative bg-black">
       {/* Background Image Layer */}
       <div 
-        className="fixed top-0 left-0 w-full h-1/2 -z-10 bg-[url('/MaskGroup.png')] bg-cover bg-center bg-no-repeat"
+        className="fixed top-0 left-0 w-full h-1/2 -z-10 bg-cover bg-center bg-no-repeat"
         
       />
 
@@ -18,21 +20,26 @@ export default function Home() {
         
         <div className="flex flex-col py-24 gap-14 px-48">
           <div className="gap-5 flex flex-col">
-            <AnimatedText 
-              text="THE EXTENSION FOR SOLO DEVS AND INDIE TEAMS" 
-              className="font-bold text-5xl max-w-[775px]" 
-            />
-            <AnimatedText 
-              text="Building with surfer is the best way to build apps solo or with a small team" 
-              className="text-2xl max-w-[596px]" 
-            />
+            <p
+              className="max-w-[775px] text-5xl" 
+            >The extension for solo devs and indie teams</p>
+            <p className="text-[#BDA396] max-w-[596px] text-xl">Surfer adds two AI-powered panels to VS Code — a smart chat assistant with file access, and a multi-agent task system that plans, codes, and reviews for you. No API keys needed.</p>
+          </div>
+          <div className="flex flex-row gap-4">
+            <Link href={'https://open-vsx.org/extension/Abinnovator/surfer'} target='_blank'><Button className="bg-[#3EE7BF]"><span className="px-3.5 py-2.5 cursor-pointer">Download</span></Button></Link>
+
+            <Link href={'https://surfer.aaditbhambri.com'}><Button className="bg-[#3EE7BF]"><span className="px-3.5 py-2.5 cursor-pointer">Web</span></Button></Link>
+
           </div>
         </div>
-
-        <div className="justify-center flex items-center">
-          <Image src={'https://cdn.hackclub.com/019dd2c7-6c22-7a2a-bed9-f5077d78f7e4/HeroImage.webp'} alt="Hero Image" width={1252} height={690} />
+        
+        <div className="flex px-28 py-4">
+          <div className="pl-6 flex bg-[#3EE7BF] rounded-3xl w-full h-full">
+            <Image src={'https://cdn.hackclub.com/019e3b97-7d57-77b1-b6de-1e06fa13bacb/Screenshot%202026-05-18%20151915.png'} alt="Hero Image" width={1006} height={573} className="rounded-[30px] py-5"/>
+          </div>
         </div>
-        <section>
+        
+        {/* <section>
           <div className="bg-[#1A1A1A]">
             <div className="py-24 mt-10">
               <div className="px-24 py-10 border-b-2 border-[#3C3C3C] pb-30">
@@ -65,7 +72,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         
       </div>
     </div>
